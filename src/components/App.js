@@ -1,12 +1,13 @@
 import React from 'react';
+import CharacterList from './CharacterList';
 
 const App = () =>
     <div className="container">
         <div className="row">
-            Hello World!
+            <CharacterList/>
         </div>
-    </div>
+    </div>;
 
 
-    export default App;
+export default App;
 
