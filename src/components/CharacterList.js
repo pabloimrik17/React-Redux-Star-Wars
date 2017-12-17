@@ -1,9 +1,9 @@
 'use strict';
 
-import { React } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
-const CharacterList = ({characters}) =>
+const CharacterList = ({ characters }) =>
     <div id="character-list" className="col-md-6">
         <h1>Characters</h1>
         <ul>
@@ -16,8 +16,6 @@ const CharacterList = ({characters}) =>
     </div>;
 
 
-const mapStateToProps = ({characters}) => ({
-    characters
-});
+const mapStateToProps = ({ characters }) => ({ characters });
 
 export default connect(mapStateToProps)(CharacterList);
